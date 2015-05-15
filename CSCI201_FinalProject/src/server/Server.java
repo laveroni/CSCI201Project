@@ -21,8 +21,8 @@ import java.util.Vector;
 public class Server {
 
 	private String MYSQL_USERNAME = "root";
-	private String MYSQL_PASSWORD = "van78756";
-	private String MYSQL_DATABASE = "DJ_Database";
+	private String MYSQL_PASSWORD = "";
+	private String MYSQL_DATABASE = "dj_project";
 	private Connection conn;
 	private Vector<User> userVector;
 	private Vector<Session> sessionVector;
