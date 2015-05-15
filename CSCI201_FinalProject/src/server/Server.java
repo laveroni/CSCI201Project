@@ -45,6 +45,8 @@ public class Server {
 			System.out.println("CNFE: " + cnfe.getMessage());
 		}
 
+		//System.out.println("after try catch block");
+		
 		userVector = new Vector<User>();
 		sessionVector = new Vector<Session>();
 		songDatabase = new HashMap<String, String>();

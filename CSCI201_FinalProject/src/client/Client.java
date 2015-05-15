@@ -77,7 +77,7 @@ public class Client implements Runnable {
 		getAllSessionsResponse = "";
 
 		try {
-			s1 = new Socket("10.121.7.1", 6789);
+			s1 = new Socket("localhost", 6789);
 			br = new BufferedReader(new InputStreamReader(s1.getInputStream()));
 			pw = new PrintWriter(s1.getOutputStream());
 		} catch (IOException ioe) {
@@ -88,7 +88,7 @@ public class Client implements Runnable {
 
 	public void openUploadSongSocket() {
 		try {
-			s3 = new Socket("10.121.7.1", 5690);
+			s3 = new Socket("localhost", 5690);
 		} catch (UnknownHostException uhe) {
 			System.out.println("UHE: " + uhe.getMessage());
 		} catch (IOException ioe) {
@@ -527,7 +527,7 @@ public class Client implements Runnable {
 
 	public void receiveSong() {
 		try {
-			s2 = new Socket("10.121.7.1", 4242);
+			s2 = new Socket("localhost", 4242);
 			int bytesRead = 0;
 			byte[] b = new byte[1];
 			BufferedInputStream bis = new BufferedInputStream(

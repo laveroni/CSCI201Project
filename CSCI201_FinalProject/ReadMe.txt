@@ -1,12 +1,4 @@
-Samuel Joo joosm@usc.edu 30381
-Vasudha Goel vasudhag@usc.edu 30381
-Patrick Vanderwall pvanderw@usc.edu 30393
-Justin Laveroni laveroni@usc.edu 30393
-Matt Rigdon mrrigdon@usc.edu 30393
-Marshall Jacobs 
-
 # CS201-Project
-Samuel Joo, Vasudha Goel, Patrick Vanderwall, Justin Laveroni, Matt Rigdon, Marshall Jacobs
 	 
 Third Party API:
 -JavaLayer: allows mp3 play functionality
@@ -17,6 +9,7 @@ Instructions:
 -Change build paths for jl1.0.1.jar and mysql-connector-java-5.1.35-bin.jar (included in project directory)
 -A mysql dump file is given in the repository, use data import to create the database
 -Run Server and enter the username, password, and name of the database
+	-Mine is ("root", "", "password") for simplicity
 -Clients may now start DJProgram to establish connections with the server
 
 General notes:
@@ -24,7 +17,7 @@ General notes:
 -Caution: although data is passed through different sockets, the server can still be overloaded
 -Every time a new song is played, a vote can be issued
 -Sessions only exist for a single instance of the server
--Guests cannot vote 
+-Guests cannot vote or create sessions
 
 	/*
 	 * Server Request Commands (* response from server necessary):
